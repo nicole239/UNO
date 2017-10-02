@@ -15,4 +15,8 @@ import java.rmi.RemoteException;
 public interface IRemote extends Remote{
     //Aquí van los métodos remotos(compartidos)
     public String getData(String text) throws RemoteException;
+    
+    public String sendMessage() throws RemoteException;
+    
+    public ICard getNextCard(ICard nextCard) throws RemoteException;
 }
